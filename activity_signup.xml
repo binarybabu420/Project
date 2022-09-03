@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <EditText
+        android:id="@+id/ema"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="true"
+        android:textColor="#0B0B0B"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/pa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <EditText
+        android:id="@+id/re"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="272dp"
+        android:ems="10"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/pa"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="340dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAllCaps="true"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/logi"
+        android:layout_width="106dp"
+        android:layout_height="76dp"
+        android:text="Already have an account?"
+        android:textAllCaps="false"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+</androidx.constraintlayout.widget.ConstraintLayout>
